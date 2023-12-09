@@ -1,0 +1,35 @@
+{
+    "model_types": {
+        "Classification": {
+            "template_file": "models/classification_template.py",
+            "tasks": ["Spam Filtering"]
+        },
+        "Regression": {
+            "template_file": "models/regression_template.py",
+            "tasks": ["House Price Prediction"]
+        },
+        "Clustering": {
+            "template_file": "models/clustering_template.py",
+            "tasks": ["Customer Segmentation"]
+        },
+        "Dimensionality Reduction": {
+            "template_file": "models/dimensionality_reduction_template.py",
+            "tasks": ["Feature Selection"]
+        },
+        "Deep Learning": {
+            "template_file": "models/deep_learning_template.py",
+            "tasks": ["Image Recognition"]
+        }
+    },
+    "data_preprocessing": {
+        "load_dataset": "data_loader.py",
+        "clean_dataset": "utils.py",
+        "split_dataset": "utils.py"
+    },
+    "model_training": {
+        "script": "train.py"
+    },
+    "model_evaluation": {
+        "script": "evaluate.py"
+    }
+}
